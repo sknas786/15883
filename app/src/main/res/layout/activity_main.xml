@@ -1,0 +1,46 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg">
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="0dp"
+
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="2"/>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#64ffda"-->
+    <!--android:padding="10dp"-->
+    <!--&gt;-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView10"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginStart="62dp"-->
+    <!--android:layout_toEndOf="@+id/imageView7"-->
+    <!--android:text="Welcome Admin"-->
+    <!--android:textSize="18dp"-->
+    <!--android:textColor="#fff"/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView7"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignTop="@+id/textView10"-->
+    <!--app:srcCompat="@drawable/picon" />-->
+    <!--</RelativeLayout>-->
+
+</FrameLayout>

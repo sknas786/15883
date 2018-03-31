@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="sinch_purple">#ff63029d</color>
+    <color name="off_white">#fffafafa</color>
+    <color name="greyish">#fff2f1f2</color>
+    <color name="bg_gradient_start">#31244e</color>
+    <color name="bg_gradient_end">#6b394c</color>
+    <color name="bg_trans">#00000000</color>
+    <color name="bg_flat_orange">#673AB7</color>
+
+</resources>

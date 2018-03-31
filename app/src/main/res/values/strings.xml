@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Shiksha</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="signup_text">Don"'t have an account?<b>Sign Up</b></string>
+    <string name="terms">I agree to the <b>terms and conditions</b>.</string>
+    <string name="title_activity_marksheet_entry">MarksheetEntryActivity</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+
+</resources>

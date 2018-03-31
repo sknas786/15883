@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="shiksha.teambitcoders.com.shiksha">
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.teambitcoders.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        tools:replace="android:icon">
+        <service android:name=".SinchService" />
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />-->
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".WidgetTestActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/mywidget" />
+        </receiver>
+
+        <activity android:name=".CallScreenActivity" />
+        <activity
+            android:name=".IncomingCallScreenActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlaceCallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".SingleEventActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AttendanceActivity" />
+        <activity android:name=".AssistantActivity" />
+        <activity android:name=".CommunityChatActivity" />
+        <activity android:name=".ParentCalendarViewActivity" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".FluentActivity" />
+        <activity android:name=".EnergisedActivity" />
+        <activity android:name=".BarcodeViewActivity" />
+        <activity android:name=".FEE" />
+        <activity android:name=".SigninActivity" />
+        <activity android:name=".SelectGrievanceActivity" />
+        <activity android:name=".ParentMenuActivity" />
+        <activity
+            android:name=".MarksheetEntryActivity"
+            android:label="@string/title_activity_marksheet_entry"
+            android:theme="@style/MyMaterialTheme" />
+        <activity android:name=".TimetableActivity" />
+        <activity android:name=".RecyclerViewNotice" />
+        <activity android:name=".DailyNoticeBoardEntryActivity" />
+        <!-- <activity android:name=".RecyclerViewNoticeAdapter" /> -->
+        <activity android:name=".ReportAttendanceActivity" />
+        <!-- <activity android:name=".WidgetTestActivity"></activity> -->
+
+        <activity android:name=".CouncilingActivity"></activity>
+    </application>
+
+</manifest>

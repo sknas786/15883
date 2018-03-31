@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview1"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="5dp"
+    card_view:contentPadding="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardMaxElevation="5dp"
+    android:background="#55000000"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/EveDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Notice heading"
+            android:textColor="#000"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/EveName"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/EveDate"
+            android:text="Notice Details" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#000"
+            android:layout_below="@+id/EveDate"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:padding="10dp"
+    android:background="@drawable/gradient_bg">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/materialEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:hint="Full name"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#fff"
+        app:met_baseColor="#FFF"
+        app:met_clearButton="true"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelTextColor="#ffffff"
+        app:met_primaryColor="#FFF"
+        app:met_singleLineEllipsis="true"
+        android:layout_above="@+id/editTextEmail"
+        android:layout_alignStart="@+id/editTextEmail" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Student"
+            android:textColor="@drawable/rbtn_textcolor_selector" />
+
+        <RadioButton
+            android:id="@+id/radioiPhone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Teacher"
+            android:textColor="@drawable/rbtn_textcolor_selector" />
+
+        <RadioButton
+            android:id="@+id/radioWindows"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector_right"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Parent"
+            android:textColor="@drawable/rbtn_textcolor_selector" />
+    </RadioGroup>
+
+
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:met_singleLineEllipsis="true"
+        android:textColorHint="#fff"
+        app:met_baseColor="#FFF"
+        app:met_clearButton="true"
+        app:met_primaryColor="#FFF"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelTextColor="#ffffff"
+        android:layout_alignBottom="@+id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:met_primaryColor="#FFF"
+        app:met_singleLineEllipsis="true"
+        app:met_clearButton="true"
+        android:textColorHint="#fff"
+        app:met_baseColor="#FFF"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelTextColor="#fff"
+        android:layout_above="@+id/checkBox"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_marginBottom="62dp" />
+
+    <Button
+        android:text="Sign up"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:textColor="#fd0051"
+        android:background="@drawable/trans_bg_fill"
+
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_centerHorizontal="true" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:buttonTint="#fff"
+        android:layout_alignBaseline="@+id/textView31"
+        android:layout_alignBottom="@+id/textView31"
+        android:layout_alignStart="@+id/editTextPassword" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:onClick="policy"
+        android:textColor="#fff"
+
+        android:text="@string/terms"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/btnLogin"
+        android:layout_alignEnd="@+id/editTextPassword" />
+
+    <!--<Button-->
+    <!--android:text="Signup"-->
+    <!--android:layout_width="180dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/btnSignup"-->
+    <!--android:textColor="#FFF"-->
+    <!--android:background="@drawable/trans_bg"-->
+    <!--android:onClick="testt"-->
+    <!--android:layout_below="@+id/btnLogin"-->
+    <!--android:layout_alignLeft="@+id/btnLogin"-->
+    <!--android:layout_alignStart="@+id/btnLogin"-->
+    <!--android:layout_marginTop="42dp" />-->
+
+</RelativeLayout>

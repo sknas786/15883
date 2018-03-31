@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "330682318195",
+    "firebase_url": "https://shiksha-a2832.firebaseio.com",
+    "project_id": "shiksha-a2832",
+    "storage_bucket": "shiksha-a2832.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330682318195:android:d50459e100f3e07c",
+        "android_client_info": {
+          "package_name": "shiksha.teambitcoders.com.shiksha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330682318195-dvpalfft0j0uhgn50ke876pvh56lpfur.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "shiksha.teambitcoders.com.shiksha",
+            "certificate_hash": "7e08c3d78ac91b2a025d96cba56e9987afd4d34f"
+          }
+        },
+        {
+          "client_id": "330682318195-5bjvg6tei3o1gn7m2k232b282s2jni5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSsgIcP0UQ_qTAHunHac4X2w4hocLqIVA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330682318195-5bjvg6tei3o1gn7m2k232b282s2jni5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

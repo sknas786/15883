@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    >
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/cardview1"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="5dp"
+        card_view:contentPadding="5dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardMaxElevation="2dp"
+        card_view:cardBackgroundColor="#10000000"
+        >
+
+        <shiksha.teambitcoders.com.shiksha.SquareImageView
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="40dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="bottom"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#fff"
+            android:background="#00000000"/>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
